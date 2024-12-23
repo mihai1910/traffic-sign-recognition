@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Sign Recognition</title>
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Traffic Sign Image</h1>
+        
+        <!-- Image upload section -->
+        <form id="upload-file" method="POST" enctype="multipart/form-data">
+            <label for="imageUpload" class="upload-label">Choose Image</label>
+            <input type="file" id="imageUpload" name="file" accept="image/*" required>
+            
+            <div class="image-section">
+                <div id="imagePreview" class="img-preview"></div>
+                <button type="button" id="btn-predict">Predict</button>
+                <div class="loader"></div>
+                <div id="result"></div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="static/js/main.js"></script>
+</body>
+</html>
